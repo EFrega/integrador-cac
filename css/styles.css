@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #434343;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.container-logo {
+    display: inline-block;
+    width: 30%;
+    min-width: 200px;
+}
+
+.container-logo a {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-logo img {  
+    width: 80px;
+    display: flex;
+}
+
+.container-logo span {  
+    display: flex;
+    color: white;
+}
+.container-nav-options {
+    display: inline-block;
+    width: 70%;
+    min-width: 240px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li.link a {
+    color:darkgray;
+    cursor: pointer;
+}
+
+nav ul li.link a:hover {
+    color:white;
+}
+
+nav ul li.comprar a {
+    color: green;
+    cursor: pointer;
+}
+
+nav ul li.comprar a:hover {
+    opacity: 0.5;
+}
+
+.texto-conferencia-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.texto-conferencia {   
+    width: 500px;
+    margin: 100px;
+    text-align: right;
+}
+
+.texto-conferencia h1 {
+    color: white;
+}
+
+.texto-conferencia p {
+    color: white;
+}
+
+.seccion-oradores {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-oradores-container {
+    margin-top: 10px;
+}
+
+.titulo-oradores-container p {
+    text-align: center;
+}
+
+.titulo-oradores-container p b {
+    font-size: 30px;
+}
+
+.oradores-container {
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.tag {
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.tag-javascript {
+    background-color: yellow;
+    color: black;
+}
+
+.tag-react {
+    background-color: rgb(53, 161, 192);
+    color: white;
+}
+
+.tag-negocios {
+    background-color: rgba(71, 74, 75, 0.32);
+    color: white;
+}
+
+.tag-startups {
+    background-color: rgb(177, 43, 43);
+    color: white;
+}
+
+.seccion-buenos-aires {
+    width: 100%;
+    background-color:#3a3e41;
+}
+
+.img-buenos-aires-container {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.img-buenos-aires-container img {
+    width: 100%;
+}
+
+.texto-buenos-aires-container {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 20px;
+}
+
+.texto-buenos-aires-container h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.texto-buenos-aires-container p {
+    color: white;
+    font-size: 12px;
+}
+
+.texto-buenos-aires-container button {
+    font-size: 12px;
+}
+
+.seccion-conviertete-orador {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orador-form-container {
+    width: 70%;
+    padding-bottom: 20px;
+}
+.orador-form-container p {
+    text-align: center;
+    font-size: 14px;
+}
+.form-label.input-charla {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+footer {
+    height: 80px;
+    background-color: #27496f;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+footer ul li {
+    display: flex;
+    margin-left: 2%;
+    font-size: 14px;
+}
+
+footer ul li:first-child {
+    margin-left: 0;
+}
+
+footer ul li a {
+    color: white;
+    cursor: pointer;
+}
