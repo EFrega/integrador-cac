@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/functions.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-logo">
+                <a href="/">
+                    <img src="../assets/codoacodo.png" alt="logo codo a codo">
+                    <span>Conf Bs As</span>
+                </a>
+            </div>
+            
+            <div class="container-nav-options">
+
+                <ul>
+                    <li class="link">
+                        <a href="/#conferencia">La conferencia</a>
+                    </li>
+                    <li class="link">
+                        <a href="/#oradores">Los oradores</a>
+                    </li>
+                    <li class="link">
+                        <a href="/#lugar">El lugar y la fecha</a>
+                    </li>
+                    <li class="link">
+                        <a href="/#orador">Conviértete en orador</a>
+                    </li>
+                    <li class="comprar">
+                        <a href="#comprar">Comprar ticket</a>
+                    </li>
+                </ul>
+
+            </div>
+            
+        </nav>
+    </header>
+    
+    <div class="seccion-tickets" id="tickets">
+        <div class="row row-cols-1 row-cols-md-3 g-2 mt-2">
+            <div class="col">
+                <div class="card border-primary mb-3 rounded-0" style="max-width: 18rem;">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Estudiante</h5>
+                        <p>Tienen un descuento</p>
+                        <p class="fw-bold">80%</p>
+                        <span class="fw-light text-secondary">* presentar documentación</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-success mb-3 rounded-0" style="max-width: 18rem;">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Trainee</h5>
+                        <p>Tienen un descuento</p>
+                        <p class="fw-bold">50%</p>
+                        <span class="fw-light text-secondary">* presentar documentación</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-warning mb-3 rounded-0" style="max-width: 18rem;">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Junior</h5>
+                        <p>Tienen un descuento</p>
+                        <p class="fw-bold">15%</p>
+                        <span class="fw-light text-secondary">* presentar documentación</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tickets-form-container text-center">
+            <p>VENTA</p>
+            <h2 class="fw-bold">VALOR DE TICKET $200</h2>
+            <div class="mb-3 row g-2 align-items-center">
+                <div class="col-6">
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+                </div>                
+            </div>
+            <div class="mb-3 row g-2 align-items-center">
+                <div class="col-12">
+                    <input type="email" class="form-control" id="inputCorreo" placeholder="Correo">
+                </div>              
+            </div>
+            <div class="mb-3 row g-2 align-items-center">
+                <div class="col-6 text-start">
+                    <label>Cantidad</label>
+                    <input type="number" class="form-control" id="inputCantidad" placeholder="Cantidad">
+                </div>
+                <div class="col-6 text-start">
+                    <label>Categoría</label>
+                    <select class="form-select" aria-label="Categoria" id="inputCategoria">
+                        <option selected value="">No aplica</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>                
+            </div>
+            <div class="mb-3 mt-4 align-items-center text-start p-3 bg-primary-subtle rounded">
+                <div class="text-info-emphasis">Total a pagar: <span id="montoTotal"></span></div>
+            </div>
+            <div class="mb-3 row g-2 align-items-center">
+                <div class="col-6 text-start">
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-success" onClick="borrarResumen()">Borrar</button>
+                    </div>
+                </div>
+                <div class="col-6 text-start">
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-success" onClick="mostrarResumen()">Resumen</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <ul>
+            <li>
+                <a href="#preguntas">Preguntas frecuentes</a>
+            </li>
+            <li>
+                <a href="#contacto">Contáctanos</a>
+            </li>
+            <li>
+                <a href="#prensa">Prensa</a>
+            </li>
+            <li>
+                <a href="#conferencias">Conferencias</a>
+            </li>
+            <li>
+                <a href="#tyc">Términos y condiciones</a>
+            </li>
+            <li>
+                <a href="#privacidad">Privacidad</a>
+            </li>
+            <li>
+                <a href="#estudiantes">Estudiantes</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

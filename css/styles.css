@@ -225,6 +225,24 @@ nav ul li.comprar a:hover {
     margin-top: 5px;
 }
 
+.seccion-tickets {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.tickets-form-container {
+    width: 60%;
+    padding-bottom: 20px;
+}
+.form-label.input-charla {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 footer {
     height: 80px;
     background-color: #27496f;
